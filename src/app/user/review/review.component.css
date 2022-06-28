@@ -1,0 +1,60 @@
+
+
+h5,a{
+    color: white;
+}
+nav{
+    background-color: rgb(55, 43, 226);
+}
+.style
+{
+    position: absolute;
+    right: 10px;
+    color: black;
+    
+}
+
+#show
+{
+    background-color:rgb(175, 59, 175);
+}
+
+p{
+    float:left;
+}
+
+#monthly
+{
+    text-decoration: underline;
+}
+.net
+{
+    height: 30px;
+    
+}
+
+.menu{
+    background:purple ;
+    text-align: center;
+    height: 50px;
+    }
+    .menu ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+    }
+    .menu ul li{
+        width:150px;
+        margin:5px;
+        padding: 7px;
+        font-weight: bold;
+    }
+    ul li a{
+        text-decoration: none;
+        color:white;
+    }
+    #review{
+        color: red;
+        font-size: 20px;
+    }
+  

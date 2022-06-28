@@ -1,0 +1,40 @@
+h5,a{
+    color: white;
+}
+  
+.style
+{
+    position: absolute;
+    right: 10px;
+    color: black;
+}
+nav{
+    background-color: blueviolet;
+}
+#show
+{
+    background-color:rgb(175, 59, 175);
+}
+.design
+{
+    background-image: url("src/assets/netflix-icon.jpg");
+    height: 800px;
+    background-size:100% ;
+    
+}
+p{
+    float:left;
+}
+#premium
+{
+    color:brown;
+    
+  text-decoration: underline;
+}
+.net
+{
+    height: 30px;
+    
+}
+
+

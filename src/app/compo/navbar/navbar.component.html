@@ -1,0 +1,10 @@
+<div class="LoginTop"><span class="LoginTopHeading">Multi Utility System</span>
+    <div class="LoginRegister">
+    <a class="LoginBtn" *ngIf = "!isLoggedIn" routerLink= "/login">Login</a>
+    <a class="RegisterBtn" *ngIf = "!isLoggedIn" routerLink="/">Register</a>
+    <a class="LoginTopHeading" (click) = "logout()" *ngIf = "isLoggedIn" mat-icon-button class="example-icon favorite-icon ml20 mr20" aria-label="Example icon-button with heart icon">Logout</a>
+    <button *ngIf = "isLoggedIn && user" class="example-icon favorite-icon ml20 mr20" mat-button aria-label="Example icon-button with heart icon">
+    {{user.username}}
+    </button>
+    </div>
+</div>

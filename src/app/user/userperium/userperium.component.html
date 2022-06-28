@@ -1,0 +1,63 @@
+<div class="design">
+  <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand"style="color:white;font-family: sans-serif;" >STAR SERVICES</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item  active">
+            <a class="nav-link" routerLink="/user/userpremium" id="monthly" style="color:white;font-family: sans-serif;">PremiumPlans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/user/usermonthly" style="color:white;font-family: sans-serif;">MonthlyPlans</a>
+          </li>
+          <li class="nav-item " >
+            <a class="nav-link" routerLink="/user/useraddon"   style="color:white;font-family: sans-serif;">Addons</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link"   style="color:white;font-family: sans-serif;">Notification</a>
+          </li>
+          <li class="nav-item " >
+            <a class="nav-link" routerLink="/user/review" style="color:white;font-family: sans-serif;">Review</a>
+          </li>
+          <li class="nav-item " >
+            <a class="nav-link" routerLink="/user/detail" style="color:white;font-family: sans-serif;">History</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="logout" class="style" style="color:white;font-family: sans-serif;"routerLink="/">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<br>
+  
+
+    <div *ngFor="let Plans of plan" >
+    <div class="card mb-3" id="grid"  class="p-3 mb-2  text-dark"  style="width: 55rem;margin: 15px ;background-color: rgb(184, 181, 181);">
+      <div class="row g-0">
+          <div class="col-md-6">
+            <div class="card-body">
+            <span class="badge badge-pill badge-dark">{{Plans.planName}}</span><br><br>
+            <h6 class="card-subtitle"><img src="../assets/currency_rupee_black_24dp.svg">{{Plans.planPrice}} </h6> <br>
+            <p class="card-text">Description :{{Plans.planDetails}}<br>Offer:20% upto Rs:200 cashback(For New Users)</p>
+            </div>
+          </div>
+          <div>
+            
+          </div>
+          <div class="card-body">
+              <h6>Service provided </h6><br><p>{{Plans.planName}}</p>
+          </div>
+          <div class="card-body">
+          <h6>Validity:</h6><br><p> {{Plans.planValidity}} </p>
+          </div>
+          <div class="card-body">
+            <a routerLink="/user/recharge"><img src="../assets/arrow_forward_ios_black_24dp.svg"></a>
+          </div>      
+      </div>
+    </div>
+    </div>
+
+
+

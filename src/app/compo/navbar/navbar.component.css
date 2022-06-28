@@ -1,0 +1,36 @@
+.LoginTop{
+    height: 44px;
+    width: 100%;
+    background-color:#682E8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .LoginTopHeading{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+  }
+  
+  .LoginRegister{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-left: 50%;
+  }
+  
+  .LoginBtn{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+    text-decoration: none;
+  }
+  
+  .RegisterBtn{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 40px;
+  }

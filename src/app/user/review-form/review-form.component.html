@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">STAR SERVICES</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link" routerLink="/user/userpremium" style="color:black;font-family: sans-serif;">PremiumPlans</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/user/usermonthly"  id="monthly" style="color:black;font-family: sans-serif;">MonthlyPlans</a>
+        </li>
+        <li class="nav-item " >
+          <a class="nav-link" routerLink="/user/useraddon"  style="color:black;font-family: sans-serif;">Addons</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <br><br>
+    <div  class="col-md-6 offset-md-3" >
+      <div class="container" >
+      <form #registerForm="ngForm" id="design" (ngSubmit)="addonRegister()" >
+        <h3 style="color:black;text-align: center;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Give Your Feedback Here</h3>
+        <br>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" [(ngModel)]="review.name">
+            <br>
+              <input type="textarea" class="form-control" id="FEEDBACK" placeholder="Feedback"  name="feedback" [(ngModel)]="review.feedback">
+           <br>
+                <input type="number" class="form-control" id="rating" placeholder="Rating"  name="type" [(ngModel)]="review.rating">
+        
+               
+            <br>
+            <button type="submit"  class="btn btn-primary"  > Submit </button>
+              
+      </form>
+  </div>

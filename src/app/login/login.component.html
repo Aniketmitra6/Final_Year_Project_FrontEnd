@@ -1,0 +1,19 @@
+<div class="LoginMiddle"> 
+    <div class="LoginImg"><img src="../assets/pexels-photo-265685.jpeg" alt="" class="LoginImage"></div>
+    <div class="LoginComponent">
+        <form class="LoginCard" [formGroup]="loginForm" (ngSubmit) = "formSubmit()">
+            <h1 class="LoginHeading">LOGIN</h1>
+            <div class="InputBox">
+                <input [(ngModel)] = "loginData.username" class="InputField" type="text" placeholder="Enter Username" formControlName="user"/>
+                <small class="ErrorMsg"  *ngIf="user && user.invalid && user.touched">*Username is invalid</small>
+            </div>
+            <div class="InputBox">
+                <input [(ngModel)] = "loginData.password" class="InputField" type="password" placeholder="Enter Password" formControlName="password"/>
+                <small class="ErrorMsg" *ngIf="password && password.invalid && password.touched">*Password length must be 5 characters</small>
+            </div>
+            <button [disabled]="loginForm.invalid" class="Btn">Login</button>
+            <p class="SignUp">New User/Admin? <a routerLink="/" class="Hyperlink">Sign Up</a></p>
+        </form>
+    </div>
+</div>
+<div class="LoginBottom"></div>

@@ -1,0 +1,42 @@
+<div class="RegisterMiddle">
+    <div class="RegisterImg"><img src="../assets/sign-up.png" alt="" class="RegisterImage"></div>
+    <div class="RegisterComponent">
+    <form class="RegisterCard" [formGroup]="registerForm" (ngSubmit)="formSubmit()">
+    <!-- <form class="RegisterCard" (ngSubmit)="formSubmit()"> -->
+
+        <h1 class="RegisterHeading">Register</h1>
+        
+            <div class="InputBox1">
+                <input [(ngModel)]="user.username" class="InputField1" type="text" placeholder="Enter Username" formControlName="username"/>
+                <small class="ErrorMsg1"  *ngIf="username && username.invalid && username.touched">*Username is invalid</small>
+            </div>
+            
+            <div class="InputBox1">
+                <input [(ngModel)]="user.password" class="InputField1" type="password" placeholder="Enter Password" formControlName="password1"/>
+                <small class="ErrorMsg1" *ngIf="password1 && password1.invalid && password1.touched">*Password length must be 5 characters</small>
+            </div>
+
+            
+          <div class="InputBox1">
+            <input [(ngModel)]="user.email" class="InputField1" type="text" placeholder="Enter Email" formControlName="email"/>
+            <small class="ErrorMsg1" *ngIf="email && email.invalid && email.touched">*Email is invalid</small>
+        </div>
+    
+        <div class="InputBox1">
+            <input [(ngModel)]="user.mobileNumber" class="InputField1" type="number" placeholder="Enter Mobile Number" formControlName="mobileNumber"/>
+            <small class="ErrorMsg1"  *ngIf="mobileNumber && mobileNumber.invalid && mobileNumber.touched">*Must be a 10-digit number</small>
+        </div>
+       
+
+        <div class="InputBox1">
+            <input [(ngModel)]="user.role" class="InputField1" type="text" placeholder="Enter Admin/Users" formControlName="role"/>
+        </div>
+
+        <button [disabled]="registerForm.invalid" class="RegisterBtn">Submit</button>
+        <!-- <button rype = "submit" class="RegisterBtn">Submit</button> -->
+
+        <p class="Login">Already a User/Admin? <a routerLink = "/login" class="LoginLink">Login</a></p>
+    </form>
+    </div>
+</div>    
+<div class="RegisterBottom"></div>

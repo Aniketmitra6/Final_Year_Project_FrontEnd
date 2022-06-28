@@ -1,0 +1,28 @@
+
+.show
+{
+    position: absolute;
+    right: 10px;
+}
+#design
+{
+    width: 100%;
+    height:200%;
+    padding: 35px;
+    background-color: white;
+    border: 1px solid;
+}
+#addon
+{
+    text-decoration: underline;
+}
+#logout
+{
+    float: right;
+    color: black;
+}
+body{
+    background-color:blueviolet;
+    background-size: cover;
+    height: 800px;
+}

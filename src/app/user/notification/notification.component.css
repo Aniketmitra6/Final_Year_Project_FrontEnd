@@ -1,0 +1,32 @@
+
+h5,a{
+    color: white;
+}
+nav{
+    background-color: blueviolet;
+}
+.style
+{
+    position: absolute;
+    right: 10px;
+    color: black;
+    
+}
+
+#show
+{
+    background-color:rgb(175, 59, 175);
+}
+p{
+    float:left;
+}
+
+#monthly
+{
+    text-decoration: underline;
+}
+.net
+{
+    height: 90px;
+    
+}

@@ -1,0 +1,170 @@
+.RegisterTop{
+    height: 40px;
+    width: 100%;
+    background-color:#682E8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RegisterTopHeading{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.RegisterMiddle{
+    display: flex;
+    height: 87.25vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+.RegisterImg{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RegisterImage{
+    height: 100%;
+    width: 110%;  
+}
+
+.RegisterComponent{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%; 
+}
+
+.RegisterCard{
+    width: 60%;
+    border: 1px solid #682E8B;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+
+}
+
+.RegisterHeading{
+    font-size: 36px;
+    font-weight: bold;
+    color: #682E8B;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.RegisterDropdown{
+    height: 30px;
+    width: 300px;
+    padding-left: 10px;
+    border: 1px solid grey;
+    font-size: 18px;
+    color: grey;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
+
+.RegisterDropdown:focus{
+    outline: none;
+}
+
+.opt{
+    color: black;
+}
+
+.InputField1{
+    height: 35px;
+    width: 300px;
+    padding-left: 10px;
+    border: 1px solid grey;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+.InputField1:focus{
+    outline: none;
+}
+
+.InputField1::placeholder{
+    font-size: 18px;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+}
+
+.RegisterBtn{
+    height: 40px;
+    width: 125px;
+    color: white;
+    background-color: #682E8B;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.Login{
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+.LoginLink{
+    text-decoration: none;
+    color: #682E8B;
+}
+
+.RegisterBottom{
+    height: 40px;
+    width: 100%;
+    background-color:#682E8B;
+}
+
+.InputBox1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.ErrorMsg1{
+    font-family: 'Roboto', sans-serif;
+    color: red; 
+    margin-left: 5px;
+}
+
+input.ng-touched.ng-invalid{
+    border: 1px solid red
+}
+
+input.ng-valid{
+    border: 1px solid green;
+}
+
+.InputBoxTop{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.RegisterBtn:disabled{
+    color: lightgray;
+    background-color: #72438f;
+    outline: none;
+    cursor: not-allowed;
+}
